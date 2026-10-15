@@ -17,6 +17,186 @@
   /* === Topbar === */
 
   /* === Header === */
+  .header {
+    backdrop-filter: none;
+  }
+
+  .header--sticky.header--up {
+    transform: none;
+  }
+
+  .header__menu {
+    display: inline-flex;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 1.2rem;
+    left: 1.2rem;
+    bottom: 1.2rem;
+    width: min(36rem, calc(100vw - 2.4rem));
+    padding: 0 1.6rem 2rem;
+    border-radius: 2rem;
+    background-color: var(--bg);
+    overflow-y: auto;
+    transform: translateX(calc(-100% - 2rem));
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    z-index: 1001;
+  }
+
+  .header__nav.is-open {
+    transform: translateX(0);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.45);
+    margin-top: calc(var(--topbar-h) - 12px);
+  }
+
+  .nav__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav__head .header__logo {
+    width: 16rem;
+    height: 4rem;
+  }
+
+  .nav__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    background-color: #f3f4f6;
+    cursor: pointer;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .nav__item,
+  .nav__item:hover,
+  .nav__item.is-open {
+    background-color: transparent;
+  }
+
+  .nav__link,
+  .nav__link:hover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 0.4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: none;
+    color: var(--dark);
+    opacity: 1;
+  }
+
+  .nav__item:has(> .mega-menu, > .dropdown) > .nav__link::after {
+    content: "expand_more";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    background-color: #f3f4f6;
+    font-family: "Material Symbols Outlined";
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .nav__item.is-open:has(> .mega-menu, > .dropdown) > .nav__link::after {
+    content: "expand_less";
+    color: var(--primary);
+  }
+
+  .header__nav .nav__item .mega-menu,
+  .header__nav .nav__item .dropdown {
+    position: static;
+    display: none;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    border-radius: 1.6rem;
+    background-color: #f8f9fb;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .nav__item.is-open > .mega-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__item.is-open > .dropdown {
+    display: block;
+  }
+
+  .mega-menu__sidebar {
+    width: 100%;
+    padding: 1.2rem 1.2rem 0.8rem;
+    border-right: none;
+  }
+
+  .mega-menu__root {
+    padding: 0 0 1rem;
+    border-radius: 0;
+    background-color: transparent;
+    color: var(--dark);
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .mega-menu__list {
+    margin: 0 0 0 0.4rem;
+    padding-left: 1.2rem;
+  }
+
+  .mega-menu__cat {
+    padding: 1rem 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  .mega-menu__cat--active {
+    background-color: transparent;
+    color: var(--text);
+    font-weight: 400;
+  }
+
+  .mega-menu__content {
+    display: none;
+  }
+
+  .dropdown__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dropdown__item,
+  .dropdown__item:hover {
+    padding: 1rem 0.8rem;
+    background-color: transparent;
+  }
+
+  .dropdown__desc {
+    display: none;
+  }
+
+  .dropdown__cta {
+    margin-top: 0.8rem;
+  }
 
   /* === Hero === */
 
@@ -63,6 +243,10 @@
   /* === Topbar === */
 
   /* === Header === */
+  .header__contact,
+  .header__button-language {
+    display: none;
+  }
 
   /* === Hero === */
 
@@ -87,4 +271,7 @@
   /* === CTA / Contact === */
 
   /* === Footer === */
+}
+body.is-nav-open {
+  overflow: hidden;
 }
