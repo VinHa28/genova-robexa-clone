@@ -515,6 +515,38 @@
   }
 
   /* === Why Robexa === */
+  .whyx {
+    padding: 4rem 0;
+  }
+
+  .whyx-col {
+    padding: 2.4rem 2rem;
+  }
+
+  .whyx-heading {
+    font-size: 2.4rem;
+  }
+
+  .whyx-lede {
+    font-size: 1.6rem;
+  }
+
+  .whyx-list {
+    grid-template-columns: 1fr;
+  }
+
+  .whyx-item-title {
+    font-size: 1.6rem;
+  }
+
+  .whyx-item-copy {
+    font-size: 1.3rem;
+    line-height: 1.45;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 
   /* === CTA / Contact === */
 

@@ -1,0 +1,115 @@
+/* Why Robexa */
+.whyx {
+  padding: 6.3rem 0;
+  background-color: #fcfcfc;
+  color: #252a2b;
+}
+
+.whyx-grid {
+  max-width: 104rem;
+  margin: 0 auto;
+}
+
+.whyx-col {
+  display: flex;
+  flex-direction: column;
+  padding: 4.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  background-color: #fff;
+}
+
+.whyx-eyebrow {
+  margin: 0 0 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--primary);
+  text-align: center;
+}
+
+.whyx-heading {
+  margin: 0;
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: #252a2b;
+  text-align: center;
+}
+
+.whyx-lede {
+  margin: 1.4rem auto 0;
+  max-width: 64ch;
+  font-size: 2.3rem;
+  line-height: 1.65;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+.whyx-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.2rem;
+  margin: 3rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.whyx-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+  padding: 1.4rem 1.2rem;
+  border: 1px solid transparent;
+  border-radius: 1.4rem;
+  transition:
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.3s,
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.whyx-item:hover {
+  transform: translateY(-4px);
+  background-color: #fafafa;
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1.4rem 3rem -1.8rem rgba(0, 0, 0, 0.35);
+}
+
+.whyx-ico {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1.1rem;
+  background-color: rgba(255, 90, 31, 0.1);
+  color: var(--primary);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.whyx-item:hover .whyx-ico {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.whyx-item-title {
+  margin: 0.2rem 0 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #252a2b;
+}
+
+.whyx-item-copy {
+  margin: 0.6rem 0 0;
+  font-size: 1.45rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: #6b6b6b;
+}
