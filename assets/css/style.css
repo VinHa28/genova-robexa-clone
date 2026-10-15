@@ -1,1 +1,15 @@
-*, ::after, ::before { box-sizing: border-box; }
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Google Sans Flex", "Google Sans", Arial, sans-serif;
+  font-weight: 400;
+}
