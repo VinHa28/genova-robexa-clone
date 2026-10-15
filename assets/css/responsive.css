@@ -221,6 +221,10 @@
   /* === CTA / Contact === */
 
   /* === Footer === */
+  /* === Bottom  nav */
+  .bottom-nav.show_on_tablet_mb {
+    display: flex;
+  }
 }
 
 /* =========== Tablet (768px - 991px) =========== */
@@ -230,7 +234,7 @@
   }
 
   /* === Hero === */
-    .hero__content {
+  .hero__content {
     padding-bottom: 10rem;
   }
 
@@ -241,7 +245,6 @@
   .hero__desc {
     font-size: 1.6rem;
   }
-
 }
 
 /* =========== Mobile (< 768px) =========== */
@@ -257,7 +260,7 @@
   }
 
   /* === Hero === */
-    .hero {
+  .hero {
     height: calc(100vh - var(--topbar-h));
     height: calc(100svh - var(--topbar-h));
   }
