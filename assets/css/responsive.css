@@ -202,7 +202,10 @@
 
   /* === Needbots === */
 
-  /* === Brand === */
+  /* === BrandsTrip === */
+  .brandbar-eyebrow {
+    font-size: 1.4rem;
+  }
 
   /* === Stats === */
 
@@ -309,6 +312,13 @@
   /* === Needbots === */
 
   /* === Brand === */
+  .brand-name {
+    font-size: 2rem;
+  }
+
+  .brand {
+    padding: 0.8rem 1.6rem;
+  }
 
   /* === Stats === */
 
