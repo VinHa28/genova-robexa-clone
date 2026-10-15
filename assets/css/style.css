@@ -18,7 +18,7 @@ html {
   --dark: #111111;
   --border: #e5e7eb;
   --radius: 0.8rem;
-  --header-h: 6.2rem;
+  --header-h: 7rem;
   --topbar-h: 3.5rem;
 }
 
@@ -85,4 +85,169 @@ button {
   background-color: rgba(255, 255, 255, 0.18);
   display: inline-flex;
   align-items: center;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  top: var(--topbar-h);
+  z-index: 999;
+  height: var(--header-h);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.header--sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: var(--bg);
+  transform: translateY(-100%);
+}
+
+.header--sticky.header--up {
+  transform: translateY(0);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header__logo {
+  display: inline-block;
+  width: 20.9rem;
+  height: 5.4rem;
+}
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header__nav {
+  display: block;
+  padding: 0.6rem;
+  border-radius: 999px;
+  background-color: #d1d0d0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.nav__item {
+  transition: all 0.2s;
+}
+
+.nav__item:hover {
+  background-color: var(--primary);
+  border-radius: 999px;
+}
+
+.nav__link {
+  display: block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text);
+  line-height: 1.5;
+  opacity: 0.85;
+  transition: color 0.2s;
+}
+
+.nav__link:hover {
+  color: white;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.header__button-search,
+.header__button-language,
+.header__menu {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.header__button-language {
+  color: var(--text);
+}
+
+.header__country-flag {
+  width: 2.4rem;
+  height: auto;
+  border-radius: 2px;
+}
+
+.header__contact {
+  position: relative;
+  overflow: hidden;
+  padding: 1.1rem 2.6rem;
+  border-radius: 999px;
+  background-color: #ff5a1f;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.header__contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #141414;
+  transform: translateX(-101%);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.header__contact:hover::before {
+  transform: translateX(0);
+}
+
+.header__contact span {
+  position: relative;
+  z-index: 1;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.header__menu {
+  display: none;
+}
+
+/* Button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.4rem;
+  border-radius: 999px;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
 }
