@@ -1,0 +1,99 @@
+/* Needbots */
+.needbots {
+  padding: 7.9rem 0;
+  background:
+    radial-gradient(
+      ellipse 60% 40% at 50% 0%,
+      rgba(255, 90, 31, 0.22),
+      transparent 70%
+    ),
+    #141414;
+  color: #fff;
+}
+
+.needbots-head {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.needbots-eyebrow {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.needbots-title {
+  margin-top: 1.4rem;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.needbots-sub {
+  margin-top: 1.8rem;
+  font-size: 2rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.needbots-grid {
+  margin-top: 4.8rem;
+}
+
+.needbots-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  height: 100%;
+  padding: 2.6rem 2.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.043);
+}
+
+.needbots-ico {
+  display: grid;
+  place-items: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 1px solid rgba(255, 90, 31, 0.28);
+  border-radius: 1.3rem;
+  background-color: rgba(255, 90, 31, 0.14);
+  color: var(--primary);
+}
+
+.needbots-ico .material-symbols-outlined {
+  font-size: 2.4rem;
+}
+
+.needbots-stat {
+  font-size: 4.32rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.needbots-label {
+  font-size: 1.5rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.needbots-cta {
+  margin-top: 4.38rem;
+  text-align: center;
+}
+
+.needbots-q {
+  font-size: 2.64rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.needbots-q span {
+  color: var(--primary);
+}
