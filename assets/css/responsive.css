@@ -228,11 +228,20 @@
   .show_on_tablet {
     display: block;
   }
-  /* === Topbar === */
-
-  /* === Header === */
 
   /* === Hero === */
+    .hero__content {
+    padding-bottom: 10rem;
+  }
+
+  .hero__title {
+    font-size: 4.4rem;
+  }
+
+  .hero__desc {
+    font-size: 1.6rem;
+  }
+
 }
 
 /* =========== Mobile (< 768px) =========== */
@@ -240,7 +249,6 @@
   .show_on_mobile {
     display: block;
   }
-  /* === Topbar === */
 
   /* === Header === */
   .header__contact,
@@ -249,6 +257,51 @@
   }
 
   /* === Hero === */
+    .hero {
+    height: calc(100vh - var(--topbar-h));
+    height: calc(100svh - var(--topbar-h));
+  }
+
+  .hero__content {
+    padding: 0 1.6rem 9rem;
+  }
+
+  .hero__eyebrow {
+    font-size: 1.3rem;
+  }
+
+  .hero__title {
+    margin-top: 1.2rem;
+    font-size: 3.2rem;
+  }
+
+  .hero__desc {
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  .hero__btn {
+    margin-top: 2rem;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.3rem;
+  }
+
+  .hero__arrow {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .hero__arrow--prev {
+    left: 1.2rem;
+  }
+
+  .hero__arrow--next {
+    right: 1.2rem;
+  }
+
+  .hero__dots {
+    bottom: 2rem;
+  }
 
   /* === Needbots === */
 
