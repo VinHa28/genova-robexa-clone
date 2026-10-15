@@ -208,6 +208,13 @@
   }
 
   /* === Stats === */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-num {
+    font-size: 4.8rem;
+  }
 
   /* === Why PUDU === */
 
@@ -321,6 +328,26 @@
   }
 
   /* === Stats === */
+  .stats-title {
+    font-size: 3rem;
+  }
+
+  .stats-lead {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-cell {
+    padding: 2.6rem 2.4rem;
+  }
+
+  .stats-ghost {
+    font-size: 12rem;
+  }
 
   /* === Why PUDU === */
 
