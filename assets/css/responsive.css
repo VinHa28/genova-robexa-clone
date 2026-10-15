@@ -238,6 +238,13 @@
   }
 
   /* === Industries === */
+  .industries-media {
+    display: none;
+  }
+
+  .industries-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
   /* === Match quiz === */
 
@@ -446,6 +453,19 @@
   }
 
   /* === Industries === */
+  .industries-title {
+    font-size: 2.4rem;
+    line-height: 1.22;
+  }
+
+  .industries-intro,
+  .industries-desc {
+    font-size: 1.6rem;
+  }
+
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
 
   /* === Match quiz === */
 

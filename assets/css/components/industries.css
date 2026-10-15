@@ -1,0 +1,237 @@
+/* Industries */
+.industries {
+  position: relative;
+  padding: 6.3rem 0;
+  background-color: #fff;
+  color: #252a2b;
+}
+
+.industries-wrap {
+  position: relative;
+}
+
+.industries-head {
+  max-width: 68rem;
+}
+
+.industries-eyebrow {
+  margin: 0 0 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.industries-title {
+  margin: 1.2rem 0 0;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: #333;
+}
+
+.industries-intro {
+  margin: 1.8rem 0 0;
+  font-size: 2.4rem;
+  line-height: 1.65;
+  text-align: justify;
+  color: #6b6b6b;
+}
+
+.industries-media {
+  position: absolute;
+  top: -11rem;
+  right: 6%;
+  width: 40rem;
+  height: auto;
+  z-index: 6;
+  display: block;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  -webkit-mask-image:
+    linear-gradient(to right, transparent, #000 13%, #000 87%, transparent),
+    linear-gradient(transparent, #000 11%, #000 89%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent, #000 13%, #000 87%, transparent),
+    linear-gradient(transparent, #000 11%, #000 89%, transparent);
+  mask-composite: intersect;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 2.2rem;
+  margin-top: 5.4rem;
+}
+
+.industries-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 3rem 2.8rem 2.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  background-color: #fcfcfc;
+  transition:
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s,
+    border-color 0.3s;
+}
+
+.industries-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 0, 0, 0.16);
+  box-shadow: 0 1.8rem 4rem -2.2rem rgba(0, 0, 0, 0.32);
+}
+
+.industries-num {
+  position: absolute;
+  top: 1.4rem;
+  right: 2.2rem;
+  font-size: 8.6rem;
+  font-weight: 700;
+  line-height: 1.12;
+  color: rgba(0, 0, 0, 0.05);
+  user-select: none;
+  pointer-events: none;
+}
+
+.industries-ico {
+  position: relative;
+  display: inline-flex;
+  margin-bottom: 1.4rem;
+  font-size: 3.4rem;
+  color: var(--primary);
+}
+
+.industries-cat {
+  position: relative;
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.industries-name {
+  position: relative;
+  margin: 1rem 0 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.industries-desc {
+  position: relative;
+  margin: 1.2rem 0 0;
+  font-size: 2.3rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: #6b6b6b;
+}
+
+.industries-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.8rem 0 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.industries-toggle:hover {
+  color: #252a2b;
+}
+
+.industries-chev {
+  transition: transform 0.35s;
+}
+
+.industries-card.is-open .industries-chev {
+  transform: rotate(180deg);
+}
+
+.industries-bots-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s;
+}
+
+.industries-card.is-open .industries-bots-wrap {
+  grid-template-rows: 1fr;
+}
+
+.industries-bots {
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.industries-card.is-open .industries-bots {
+  padding-top: 1.8rem;
+}
+
+.industries-bots li {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.8rem;
+  padding-left: 1.6rem;
+  font-size: 2.1rem;
+  line-height: 1.4;
+}
+
+.industries-bots li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+.industries-bot-model {
+  font-weight: 600;
+  color: #252a2b;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.industries-bot-model:hover {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.industries-bot-role {
+  color: #6b6b6b;
+}
+
+.industries-bot-role::before {
+  content: "— ";
+  color: rgba(0, 0, 0, 0.32);
+}
