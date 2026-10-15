@@ -122,6 +122,7 @@
     <link rel="stylesheet" href="./assets/css/components/whyx.css" />
     <link rel="stylesheet" href="./assets/css/components/footer.css" />
     <link rel="stylesheet" href="./assets/css/components/pcards.css" />
+    <link rel="stylesheet" href="./assets/css/components/match.css" />
     <!-- Responsive -->
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
@@ -1087,6 +1088,185 @@
         </div>
       </section>
 
+      <!-- Match -->
+      <section class="match reveal">
+        <div class="container match-wrap">
+          <header class="match-head">
+            <p class="eyebrow">Tìm robot phù hợp</p>
+            <h2 class="match-title">
+              Chọn đúng robot.<br />Vận hành hiệu quả hơn.
+            </h2>
+            <p class="match-intro">
+              Trả lời vài câu hỏi nhanh để Robexa đề xuất giải pháp phù hợp với
+              không gian và nhu cầu của bạn. Sau đó, chuyên gia của chúng tôi sẽ
+              tư vấn chi tiết và gửi báo giá riêng.
+            </p>
+          </header>
+
+          <div class="match-card">
+            <div class="match-quiz" id="matchQuiz">
+              <div class="match-progress" aria-hidden="true">
+                <span class="match-progress-bar" id="matchBar"></span>
+              </div>
+              <p class="match-stepline">
+                Bước <span id="matchStepNow">1</span> trên
+                <span id="matchStepTotal">5</span>
+              </p>
+
+              <fieldset class="match-step is-active">
+                <legend class="match-q">
+                  Bạn đang kinh doanh trong lĩnh vực nào?
+                </legend>
+                <div class="match-options">
+                  <button type="button" class="match-opt">
+                    Nhà hàng & F&B
+                  </button>
+                  <button type="button" class="match-opt">
+                    Khách sạn & lưu trú
+                  </button>
+                  <button type="button" class="match-opt">
+                    Văn phòng & Tòa nhà
+                  </button>
+                  <button type="button" class="match-opt">
+                    Nhà máy & Kho bãi
+                  </button>
+                  <button type="button" class="match-opt">
+                    Y tế & Chăm sóc sức khỏe
+                  </button>
+                  <button type="button" class="match-opt">
+                    Bán lẻ & Mua sắm
+                  </button>
+                </div>
+              </fieldset>
+
+              <fieldset class="match-step">
+                <legend class="match-q">Bạn cần hỗ trợ nhất ở việc gì?</legend>
+                <div class="match-options">
+                  <button type="button" class="match-opt">
+                    Giao món & bưng khay
+                  </button>
+                  <button type="button" class="match-opt">
+                    Tiếp đón & dẫn khách
+                  </button>
+                  <button type="button" class="match-opt">
+                    Kết hợp nhiều công việc
+                  </button>
+                  <button type="button" class="match-opt">
+                    Vệ sinh & khử khuẩn sàn
+                  </button>
+                  <button type="button" class="match-opt">
+                    Vận chuyển vật liệu & Pallet
+                  </button>
+                </div>
+              </fieldset>
+
+              <fieldset class="match-step">
+                <legend class="match-q">
+                  Không gian của bạn rộng bao nhiêu?
+                </legend>
+                <div class="match-options">
+                  <button type="button" class="match-opt">
+                    Lớn - trên 2000 m2
+                  </button>
+                  <button type="button" class="match-opt">
+                    Trung bình - 500 - 2000 m2
+                  </button>
+                  <button type="button" class="match-opt">
+                    Nhỏ — dưới 500 m²
+                  </button>
+                  <button type="button" class="match-opt">
+                    Nhiều địa điểm
+                  </button>
+                </div>
+              </fieldset>
+
+              <fieldset class="match-step">
+                <legend class="match-q">
+                  Bạn đang cân nhắc bao nhiêu robot?
+                </legend>
+                <div class="match-options">
+                  <button type="button" class="match-opt">
+                    Chỉ một robot để bắt đầu
+                  </button>
+                  <button type="button" class="match-opt">
+                    Đội robot nhỏ (2 đến 5)
+                  </button>
+                  <button type="button" class="match-opt">
+                    Đội robot lớn hơn (6 hoặc nhiều hơn)
+                  </button>
+                  <button type="button" class="match-opt">
+                    Chưa chắc chắn
+                  </button>
+                </div>
+              </fieldset>
+
+              <fieldset class="match-step">
+                <legend class="match-q">
+                  Mức ngân sách nào phù hợp với bạn?
+                </legend>
+                <div class="match-options">
+                  <button type="button" class="match-opt">Phổ thông</button>
+                  <button type="button" class="match-opt">Tầm trung</button>
+                  <button type="button" class="match-opt">
+                    Cao cấp — dẫn đầu phân khúc
+                  </button>
+                  <button type="button" class="match-opt">
+                    Tôi muốn được tư vấn
+                  </button>
+                </div>
+                <div class="match-budget-custom">
+                  <label class="match-budget-label" for="matchBudgetInput">
+                    Hoặc nhập ngân sách của bạn
+                  </label>
+                  <div class="match-budget-row">
+                    <input
+                      class="match-budget-input"
+                      id="matchBudgetInput"
+                      type="text"
+                      inputmode="numeric"
+                      autocomplete="off"
+                      placeholder="Nhập số tiền"
+                    />
+                    <button
+                      type="button"
+                      class="btn btn-primary match-budget-go"
+                      id="matchBudgetGo"
+                    >
+                      XEM GỢI Ý CHO TÔI
+                    </button>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="match-controls">
+                <button type="button" class="match-back" id="matchBack" hidden>
+                  ← Quay lại
+                </button>
+                <span class="match-hint">Chọn một phương án để tiếp tục</span>
+              </div>
+            </div>
+
+            <div class="match-result" id="matchResult" hidden>
+              <p class="match-result-eyebrow">
+                Điểm khởi đầu được gợi ý cho bạn
+              </p>
+              <h3 class="match-result-head">
+                Bộ robot phù hợp với không gian của bạn
+              </h3>
+              <ul class="match-combo" id="matchCombo"></ul>
+              <div class="match-result-cta">
+                <a href="#" class="btn btn-primary"
+                  >Nhận báo giá riêng cho tôi</a
+                >
+                <button type="button" class="btn btn-ghost" id="matchRestart">
+                  Bắt đầu lại
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Pcards -->
       <section class="pcards reveal">
         <div class="pcards-grid">
@@ -1634,23 +1814,45 @@
           </div>
         </div>
       </section>
+
+      <!-- Pcards -->
       <section class="pcards reveal">
         <div class="pcards-grid">
-          <a class="pcard" href="https://robexa.vn/collections/robot-ve-sinh-thuong-mai">
-            <video muted loop playsinline src="https://cdn.hstatic.net/files/200001202310/file/bg1-video.mp4"></video>
+          <a
+            class="pcard"
+            href="https://robexa.vn/collections/robot-ve-sinh-thuong-mai"
+          >
+            <video
+              muted
+              loop
+              playsinline
+              src="https://cdn.hstatic.net/files/200001202310/file/bg1-video.mp4"
+            ></video>
             <div class="scrim"></div>
             <div class="pcard-head">
               <div>
                 <h3>Vệ sinh thương mại</h3>
-                <p>Vệ sinh tự động
-cho mọi môi trường.</p>
+                <p>Vệ sinh tự động cho mọi môi trường.</p>
               </div>
               <span class="pcard-arr">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 17L17 7"></path>
+                  <path d="M8 7h9v9"></path>
+                </svg>
               </span>
             </div>
             <div class="pcard-img">
-              <img src="https://cdn.hstatic.net/themes/200001202310/1001515490/14/gen_home_section7_item1_img.jpg?v=426" alt="PUDU BG1 Seris" />
+              <img
+                src="https://cdn.hstatic.net/themes/200001202310/1001515490/14/gen_home_section7_item1_img.jpg?v=426"
+                alt="PUDU BG1 Seris"
+              />
             </div>
             <div class="pcard-foot">
               <span class="m">PUDU BG1 Seris</span>
@@ -1659,21 +1861,41 @@ cho mọi môi trường.</p>
             </div>
           </a>
 
-          <a class="pcard" href="https://robexa.vn/collections/robot-giao-hang-thuong-mai">
-            <video muted loop playsinline src="https://cdn.hstatic.net/files/200001202310/file/bella-video.mp4"></video>
+          <a
+            class="pcard"
+            href="https://robexa.vn/collections/robot-giao-hang-thuong-mai"
+          >
+            <video
+              muted
+              loop
+              playsinline
+              src="https://cdn.hstatic.net/files/200001202310/file/bella-video.mp4"
+            ></video>
             <div class="scrim"></div>
             <div class="pcard-head">
               <div>
                 <h3>Giao hàng thương mại</h3>
-                <p>Robot dịnh vụ thông minh
-cho doanh nghiệp hiện đại.</p>
+                <p>Robot dịnh vụ thông minh cho doanh nghiệp hiện đại.</p>
               </div>
               <span class="pcard-arr">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 17L17 7"></path>
+                  <path d="M8 7h9v9"></path>
+                </svg>
               </span>
             </div>
             <div class="pcard-img">
-              <img src="https://cdn.hstatic.net/themes/200001202310/1001515490/14/gen_home_section7_item2_img.jpg?v=426" alt="BellaBot Pro" />
+              <img
+                src="https://cdn.hstatic.net/themes/200001202310/1001515490/14/gen_home_section7_item2_img.jpg?v=426"
+                alt="BellaBot Pro"
+              />
             </div>
             <div class="pcard-foot">
               <span class="m">BellaBot Pro</span>
@@ -1682,21 +1904,41 @@ cho doanh nghiệp hiện đại.</p>
             </div>
           </a>
 
-          <a class="pcard" href="https://robexa.vn/collections/robot-van-chuyen-cong-nghiep">
-            <video muted loop playsinline src="https://cdn.hstatic.net/files/200001202310/file/t600-video.mp4"></video>
+          <a
+            class="pcard"
+            href="https://robexa.vn/collections/robot-van-chuyen-cong-nghiep"
+          >
+            <video
+              muted
+              loop
+              playsinline
+              src="https://cdn.hstatic.net/files/200001202310/file/t600-video.mp4"
+            ></video>
             <div class="scrim"></div>
             <div class="pcard-head">
               <div>
                 <h3>Giao hàng công nghiệp</h3>
-                <p>Vận chuyển hạng nặng
-cho hoạt động chính xác.</p>
+                <p>Vận chuyển hạng nặng cho hoạt động chính xác.</p>
               </div>
               <span class="pcard-arr">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 17L17 7"></path>
+                  <path d="M8 7h9v9"></path>
+                </svg>
               </span>
             </div>
             <div class="pcard-img">
-              <img src="https://cdn.hstatic.net/themes/200001202310/1001515490/14/gen_home_section7_item3_img.jpg?v=426" alt="PUDU T Seris" />
+              <img
+                src="https://cdn.hstatic.net/themes/200001202310/1001515490/14/gen_home_section7_item3_img.jpg?v=426"
+                alt="PUDU T Seris"
+              />
             </div>
             <div class="pcard-foot">
               <span class="m">PUDU T Seris</span>
@@ -1960,6 +2202,7 @@ cho hoạt động chính xác.</p>
     <script src="assets/js/header.js" defer></script>
     <script src="assets/js/mega-menu.js" defer></script>
     <script src="assets/js/industries.js" defer></script>
+    <script src="assets/js/match.js" defer></script>
     <script src="assets/js/main.js" defer></script>
   </body>
 </html>

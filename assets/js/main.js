@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initMobileMenu();
   initLanguage();
   initIndustries();
+  initMatch();
   initPcards();
 });
 
