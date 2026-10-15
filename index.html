@@ -142,7 +142,7 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a href="#" class="header__logo ">
+          <a href="#" class="header__logo">
             <img src="./assets/images/logo/logo.webp" alt="robexa-logo" />
           </a>
           <nav class="header__nav">
@@ -466,16 +466,64 @@
             <button class="header__button-search">
               <span class="material-symbols-outlined"> search </span>
             </button>
-            <button class="header__button-language">
-              <img
-                src="./assets/images/countries/vietnam.svg"
-                alt="vietnam"
-                class="header__country-flag"
-              />
-              <span class="material-symbols-outlined">
-                keyboard_arrow_down
-              </span>
-            </button>
+            <div class="header__lang">
+              <button class="header__button-language">
+                <img
+                  src="./assets/images/countries/vietnam.svg"
+                  alt="Tiếng Việt"
+                  class="header__country-flag"
+                />
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </button>
+
+              <ul class="header__lang-menu">
+                <li>
+                  <button
+                    class="header__lang-item header__lang-item--active"
+                    data-lang="Tiếng Việt"
+                    data-flag="./assets/images/countries/vietnam.svg"
+                  >
+                    <img src="./assets/images/countries/vietnam.svg" alt="" />
+                    <span>Tiếng Việt</span>
+                  </button>
+                </li>
+
+                <li>
+                  <button
+                    class="header__lang-item"
+                    data-lang="English"
+                    data-flag="./assets/images/countries/us.svg"
+                  >
+                    <img src="./assets/images/countries/us.svg" alt="" />
+                    <span>English</span>
+                  </button>
+                </li>
+
+                <li>
+                  <button
+                    class="header__lang-item"
+                    data-lang="中文"
+                    data-flag="./assets/images/countries/china.svg"
+                  >
+                    <img src="./assets/images/countries/china.svg" alt="" />
+                    <span>中文</span>
+                  </button>
+                </li>
+
+                <li>
+                  <button
+                    class="header__lang-item"
+                    data-lang="日本語"
+                    data-flag="./assets/images/countries/japan.svg"
+                  >
+                    <img src="./assets/images/countries/japan.svg" alt="" />
+                    <span>日本語</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
             <button class="header__contact">
               <span>Liên hệ</span>
             </button>

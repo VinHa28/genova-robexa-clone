@@ -3,4 +3,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initHeader();
   initMegaMenu();
   initMobileMenu();
+  initLanguage();
 });
