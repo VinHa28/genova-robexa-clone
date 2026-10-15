@@ -201,10 +201,26 @@
   /* === Hero === */
 
   /* === Needbots === */
+  .needbots-card {
+    padding: 2rem 1.8rem;
+  }
+
+  .needbots-ico {
+    width: 5.4rem;
+    height: 5.4rem;
+  }
+
+  .needbots-stat {
+    font-size: 4rem;
+  }
+
+  .needbots-label {
+    font-size: 1.4rem;
+  }
 
   /* === BrandsTrip === */
   .brandbar-eyebrow {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   /* === Stats === */
@@ -317,6 +333,46 @@
   }
 
   /* === Needbots === */
+  .needbots-title {
+    font-size: 3rem;
+  }
+
+  .needbots-sub {
+    font-size: 1.6rem;
+  }
+
+  .needbots-grid {
+    row-gap: 1.2rem;
+  }
+
+  .needbots-grid > .col-12 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .needbots-card {
+    gap: 0.8rem;
+    padding: 1.2rem;
+    border-radius: 1.4rem;
+  }
+
+  .needbots-ico {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+
+  .needbots-ico .material-symbols-outlined {
+    font-size: 2rem;
+  }
+
+  .needbots-stat {
+    font-size: 3.2rem;
+  }
+
+  .needbots-label {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
 
   /* === Brand === */
   .brand-name {
