@@ -130,6 +130,7 @@
         </div>
       </div>
     </div>
+    <!-- Header -->
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -179,7 +180,50 @@
         </div>
       </div>
     </header>
-    <main style="height: 5000px; background-color: bisque"></main>
+
+    <!-- Main -->
+    <main style="height: 5000px">
+      <!-- Hero Section -->
+
+      <section class="hero">
+        <div class="hero__slider">
+          <div class="hero__slide hero__slide--active">
+            <img
+              src="./assets/images/hero_sliders/slide_1_img.webp"
+              alt="slider-1"
+              class="hero__img"
+            />
+            <div class="container hero__content">
+              <p class="hero__index">01</p>
+              <p class="hero__eyebrow">Robot PUDU tại Việt Nam</p>
+              <h1 class="hero__title">
+                Robexa — Giải pháp robot cho doanh nghiệp
+              </h1>
+              <p class="hero__desc">
+                Robexa tư vấn và triển khai robot phục vụ, vệ sinh và vận chuyển
+                công nghiệp.
+              </p>
+              <a href="#" class="hero__btn">Nhận tư vấn</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="hero__arrow hero__arrow--prev">
+          <span class="material-symbols-outlined">chevron_left</span>
+        </button>
+        <button class="hero__arrow hero__arrow--next">
+          <span class="material-symbols-outlined">chevron_right</span>
+        </button>
+
+        <div class="hero__dots">
+          <button class="hero__dot hero__dot--active"></button>
+          <button class="hero__dot"></button>
+          <button class="hero__dot"></button>
+          <button class="hero__dot"></button>
+          <button class="hero__dot"></button>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <h1>Hello Rovexa Clone</h1>
     <script src="assets/js/main.js" defer></script>

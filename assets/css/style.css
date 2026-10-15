@@ -251,3 +251,149 @@ button {
 .btn:hover {
   background-color: var(--primary-dark);
 }
+
+/* Hero */
+.hero {
+  position: relative;
+  height: calc(100vh - var(--topbar-h));
+  margin-top: calc(-1 * var(--header-h));
+  background-color: var(--dark);
+  overflow: hidden;
+}
+
+.hero__slider {
+  position: relative;
+  height: 100%;
+}
+
+.hero__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.hero__slide--active {
+  opacity: 1;
+}
+
+.hero__slide::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.55) 50%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.hero__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 12rem;
+  color: #fff;
+}
+
+.hero__index {
+  font-size: 1.6rem;
+  opacity: 0.8;
+}
+
+.hero__eyebrow {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff5a1f;
+}
+
+.hero__title {
+  margin-top: 2rem;
+  max-width: 70rem;
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.hero__desc {
+  margin-top: 2rem;
+  max-width: 52rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.hero__btn {
+  align-self: flex-start;
+  margin-top: 3rem;
+  padding: 1.4rem 3.2rem;
+  border-radius: 999px;
+  background-color: #ff5a1f;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero__arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.hero__arrow--prev {
+  left: 2rem;
+}
+
+.hero__arrow--next {
+  right: 2rem;
+}
+
+.hero__dots {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+.hero__dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.hero__dot--active {
+  background-color: var(--primary);
+}
