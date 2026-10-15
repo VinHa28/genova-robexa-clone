@@ -233,6 +233,9 @@
   }
 
   /* === Why PUDU === */
+  .whyp-heading {
+    font-size: 3.6rem;
+  }
 
   /* === Industries === */
 
@@ -406,6 +409,41 @@
   }
 
   /* === Why PUDU === */
+  .whyp {
+    padding: 4.2rem 0;
+  }
+
+  .whyp-heading {
+    font-size: 2.4rem;
+    line-height: 1.22;
+  }
+
+  .whyp-lede {
+    font-size: 1.6rem;
+  }
+
+  .whyp-list {
+    gap: 0.9rem;
+  }
+
+  .whyp-item {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1.3rem;
+  }
+
+  .whyp-item-title {
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+
+  .whyp-item-copy {
+    font-size: 1.3rem;
+  }
+
+  .whyp-award-label {
+    font-size: 1.2rem;
+  }
 
   /* === Industries === */
 

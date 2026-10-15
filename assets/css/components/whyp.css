@@ -1,0 +1,148 @@
+/* Why PUDU */
+.whyp {
+  padding: 6.1rem 0;
+  background:
+    linear-gradient(
+      rgba(10, 12, 16, 0.6) 0%,
+      rgba(10, 12, 16, 0.32) 46%,
+      rgba(10, 12, 16, 0.56) 100%
+    ),
+    url("../../images/whyp/whyp_bg.webp") center / cover no-repeat,
+    #0c0c0e;
+  color: #fff;
+}
+
+.whyp-head {
+  max-width: 78rem;
+  margin: 0 auto 5.2rem;
+  text-align: center;
+}
+
+.whyp-eyebrow {
+  margin: 0 0 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.whyp-heading {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.whyp-lede {
+  margin: 1.6rem 0 0;
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.whyp-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem 2.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.whyp-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2.2rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2rem 4.4rem -2.6rem rgba(0, 0, 0, 0.7);
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.whyp-item:hover {
+  transform: translateY(-4px);
+  background-color: #fff;
+  box-shadow: 0 2.8rem 5.6rem -2.6rem rgba(0, 0, 0, 0.8);
+}
+
+.whyp-ico {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 1.2rem;
+  background-color: #ffe8df;
+}
+
+.whyp-ico .material-symbols-outlined {
+  font-size: 2.2rem;
+  color: var(--primary);
+}
+
+.whyp-item-title {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #333;
+}
+
+.whyp-item-copy {
+  margin: 0.7rem 0 0;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+
+.whyp-awards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4.2rem;
+}
+
+.whyp-award-label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.whyp-award-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.whyp-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  background-color: rgba(8, 9, 12, 0.55);
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.whyp-chip .material-symbols-outlined {
+  font-size: 1.3rem;
+  color: var(--primary);
+}
