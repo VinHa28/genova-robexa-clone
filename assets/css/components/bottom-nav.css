@@ -32,12 +32,3 @@
 .bottom-nav__item--active {
   color: var(--primary);
 }
-
-body {
-  padding-bottom: 6.4rem;
-}
-
-.hero {
-  height: calc(100vh - var(--topbar-h) - 6.4rem);
-  height: calc(100svh - var(--topbar-h) - 6.4rem);
-}

@@ -1,0 +1,370 @@
+/* === Form (hcta) === */
+.hcta {
+  background: var(--primary);
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  padding: clamp(48px, 7vh, 84px) 0;
+}
+.hcta-ghost {
+  position: absolute;
+  left: 50%;
+  bottom: -5%;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  text-transform: uppercase;
+  font-size: clamp(130px, 26vw, 400px);
+  line-height: 0.8;
+  color: rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.hcta > .cta-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+/* Khối trái: tiêu đề và nút */
+.hcta .cta-demo {
+  margin: 0 auto;
+  max-width: 760px;
+  text-align: center;
+}
+.hcta-eyebrow {
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 0.35rem;
+  font-weight: 700;
+}
+.hcta .cta-head {
+  font-weight: 600;
+  font-size: 4.8rem;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin-top: 12px;
+  color: #fff;
+}
+.hcta .cta-sub {
+  margin: 18px auto 0;
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 2.4rem;
+  line-height: 1.65;
+}
+.hcta .cta-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.hcta .cta-demo .btn-primary {
+  background: #fff;
+  height: 48px;
+  color: var(--dark, #111);
+  font-size: 1.2rem;
+  transition: all 0.15s ease-in;
+}
+
+.hcta .cta-demo .btn-primary:hover {
+  background: #f0f0f0;
+  color: var(--dark, #111);
+  transform: translateY(-4px);
+}
+.hcta .btn-ghost {
+  background: transparent;
+  color: #fff;
+  font-size: 1.2rem;
+  border: 1px solid #fff;
+  transition: all 0.25s ease;
+}
+
+.hcta .btn-ghost:hover {
+  background: #fff;
+  color: var(--text);
+}
+.hcta .cta-foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+  font-size: 1.8rem;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.hcta .cta-foot-ic {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 15px;
+  color: #fff;
+}
+
+/* Khối phải: card form */
+.hcta .cta-form-card {
+  max-width: 980px;
+  margin: clamp(44px, 6vh, 68px) auto 0;
+  padding: clamp(26px, 3.4vw, 40px);
+  background: #fff;
+  color: #111;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 24px 60px -32px rgba(0, 0, 0, 0.45);
+}
+.hcta .cta-form-head {
+  max-width: 640px;
+  margin: 0 auto 24px;
+  font-size: 2.24rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #111;
+}
+
+/* Form */
+.lead-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px 15px;
+  text-align: left;
+}
+.lead-reqnote {
+  grid-column: 1 / -1;
+  margin: 0 0 2px;
+  font-size: 1.2rem;
+  color: #6b6b6b;
+}
+.lead-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.lead-field--full {
+  grid-column: 1 / -1;
+}
+.lead-label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111;
+}
+.lead-req {
+  color: var(--primary);
+  font-weight: 700;
+}
+.lead-opt {
+  font-weight: 400;
+  color: #6b6b6b;
+}
+.lead-input {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 1.5rem;
+  padding: 11px 13px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  background: #fff;
+  color: #111;
+}
+.lead-input::placeholder {
+  color: #9ca3af;
+}
+.lead-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(255, 90, 31, 0.15);
+}
+.lead-input--error {
+  border-color: #dc2626;
+  background-color: #fef2f2;
+}
+.lead-textarea {
+  min-height: 75px;
+  resize: vertical;
+  line-height: 1.4;
+}
+
+/* Ô xác nhận "không phải người máy" */
+.lead-verify-wrap {
+  margin: 4px 0 6px;
+}
+.lead-verify-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+.lead-verify-card:hover {
+  border-color: #cbd5e1;
+  background: #f1f5f9;
+}
+.lead-verify-label {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.lead-verify-checkbox-wrapper {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.lead-verify-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.lead-verify-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  border: 2px solid #cbd5e1;
+  border-radius: 6px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+.lead-verify-checkbox:checked + .lead-verify-checkmark {
+  background: #16a34a;
+  border-color: #16a34a;
+}
+.lead-verify-icon-check {
+  display: none;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+}
+.lead-verify-checkbox:checked + .lead-verify-checkmark .lead-verify-icon-check {
+  display: block;
+}
+.lead-verify-spinner {
+  display: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #cbd5e1;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: leadSpin 0.6s linear infinite;
+}
+.lead-verify-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.lead-verify-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #1e293b;
+}
+.lead-verify-desc {
+  margin-top: 2px;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  color: #64748b;
+}
+.lead-verify-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  flex-shrink: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #94a3b8;
+}
+.lead-verify-badge-icon {
+  width: 22px;
+  height: 22px;
+  color: #0284c7;
+}
+
+/* Nút gửi và các dòng chú thích */
+.lead-submit {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 6px;
+  padding: 16px 26px;
+  background: var(--primary);
+  color: #fff;
+  border: 0;
+  border-radius: 14px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 18px 38px -12px rgba(255, 90, 31, 0.62);
+  transition:
+    transform 0.18s,
+    box-shadow 0.18s,
+    background 0.2s;
+}
+.lead-submit:hover {
+  background: #e04812;
+  transform: translateY(-2px);
+}
+.lead-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+.lead-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #6b6b6b;
+}
+.lead-recaptcha-note {
+  grid-column: 1 / -1;
+  margin: -6px 0 8px;
+  font-size: 1.1rem;
+  color: #94a3b8;
+}
+.lead-status {
+  grid-column: 1 / -1;
+  margin: 2px 0 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #16a34a;
+}
+.lead-status--error {
+  color: #dc2626;
+}
+
+@keyframes leadSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
