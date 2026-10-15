@@ -1,0 +1,90 @@
+.show_on_mobile,
+.show_on_tablet {
+  display: none;
+}
+.show_on_tablet_mb {
+  display: none;
+}
+
+/* =========== Tablet & Mobile (< 992px) =========== */
+@media screen and (max-width: 991.98px) {
+  .show_on_tablet_mb {
+    display: block;
+  }
+  .hide_on_tablet_mobile {
+    display: none;
+  }
+  /* === Topbar === */
+
+  /* === Header === */
+
+  /* === Hero === */
+
+  /* === Needbots === */
+
+  /* === Brand === */
+
+  /* === Stats === */
+
+  /* === Why PUDU === */
+
+  /* === Industries === */
+
+  /* === Match quiz === */
+
+  /* === Products === */
+
+  /* === Real cases === */
+
+  /* === Why Robexa === */
+
+  /* === CTA / Contact === */
+
+  /* === Footer === */
+}
+
+/* =========== Tablet (768px - 991px) =========== */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .show_on_tablet {
+    display: block;
+  }
+  /* === Topbar === */
+
+  /* === Header === */
+
+  /* === Hero === */
+}
+
+/* =========== Mobile (< 768px) =========== */
+@media screen and (max-width: 767.98px) {
+  .show_on_mobile {
+    display: block;
+  }
+  /* === Topbar === */
+
+  /* === Header === */
+
+  /* === Hero === */
+
+  /* === Needbots === */
+
+  /* === Brand === */
+
+  /* === Stats === */
+
+  /* === Why PUDU === */
+
+  /* === Industries === */
+
+  /* === Match quiz === */
+
+  /* === Products === */
+
+  /* === Real cases === */
+
+  /* === Why Robexa === */
+
+  /* === CTA / Contact === */
+
+  /* === Footer === */
+}
