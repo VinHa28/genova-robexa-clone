@@ -1,0 +1,273 @@
+/* Footer */
+.mainFooter {
+  background-color: #1c1f26;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* Về công ty (chỉ hiện ở mobile) */
+.ftr-about {
+  display: none;
+  padding-top: 3rem;
+}
+
+.ftr-about-h {
+  margin: 0 0 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.ftr-about-copy {
+  margin: 0 0 1.6rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.ftr-about-link {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Văn phòng */
+.footer-newsletter {
+  padding: 2rem 0;
+}
+
+.ftr-offices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.3rem;
+  padding-top: 1rem;
+}
+
+.ftr-office-name {
+  margin: 0 0 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.ftr-addr {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 0;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.ftr-addr p {
+  margin: 0;
+}
+
+/* Giám đốc / hotline theo thành phố */
+.ftr-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.8rem;
+  padding: 3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ftr-dirs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 6.4rem;
+}
+
+.ftr-dir {
+  min-width: 26rem;
+}
+
+.ftr-dir-city {
+  margin: 0 0 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.ftr-people {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ftr-person {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 21rem;
+}
+
+.ftr-person-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  word-break: break-word;
+  transition: color 0.25s;
+}
+
+.ftr-person-row:hover {
+  color: var(--primary);
+}
+
+.ftr-person-mail {
+  font-size: 1.3rem;
+}
+
+.ftr-pic {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.ftr-pic--tel {
+  background-color: #e8342c;
+}
+
+.ftr-pic--mail {
+  background-color: #1faa4b;
+}
+
+.ftr-pic .material-symbols-outlined {
+  font-size: 1.3rem;
+}
+
+.ftr-person-tx {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  min-width: 0;
+}
+
+.ftr-person-nm {
+  margin: 0 0 0.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #e9e9e9;
+  white-space: nowrap;
+}
+
+.ftr-person-no {
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+.ftr-mst {
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Cột liên kết */
+.footer-expand-collapsed {
+  border-top: 0;
+}
+
+.footer-expand-collapsed > .container > .row {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.widget-footer {
+  padding: 0 1.5rem;
+}
+
+.title-footer {
+  margin: 0;
+  padding: 1.5rem 0 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.content-footer {
+  padding: 1rem 0 2rem;
+}
+
+.ftr-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ftr-col a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
+  word-break: break-word;
+  transition: color 0.25s;
+}
+
+.ftr-col a:hover {
+  color: var(--primary);
+}
+
+.ftr-email-role {
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.ftr-col2 a {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Bản quyền */
+.footer-copyright {
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.ftr-bottom-cp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  letter-spacing: 0.1em;
+}
+
+.ftr-bottom-sep {
+  display: inline-flex;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin: 0 0.4rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+  opacity: 0.8;
+}

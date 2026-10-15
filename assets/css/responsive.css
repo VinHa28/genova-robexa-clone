@@ -249,6 +249,9 @@
   /* === Match quiz === */
 
   /* === Products === */
+  .pcards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   /* === Real cases === */
   .cases-grid {
@@ -473,6 +476,46 @@
   /* === Match quiz === */
 
   /* === Products === */
+  .pcards {
+    padding: 3.4rem 0;
+  }
+
+  .pcards-grid {
+    display: flex;
+    grid-template-columns: none;
+    max-width: none;
+    gap: 1.3rem;
+    padding: 0.2rem 1.6rem 0.8rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .pcards-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pcard {
+    flex: 0 0 84%;
+    min-height: 36rem;
+  }
+
+  .pcard-head {
+    padding: 2.2rem 2.2rem 0;
+  }
+
+  .pcard-head h3 {
+    font-size: 1.35rem;
+  }
+
+  .pcard-head p {
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+  }
+
+  .pcard-foot {
+    padding: 0 2.2rem 2rem;
+    font-size: 1.5rem;
+  }
 
   /* === Real cases === */
   .cases {
@@ -551,6 +594,43 @@
   /* === CTA / Contact === */
 
   /* === Footer === */
+  .mainFooter .container {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+
+  .ftr-about {
+    display: block;
+  }
+
+  .ftr-offices {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+
+  .ftr-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.4rem 0;
+  }
+
+  .ftr-dirs {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .ftr-dir {
+    min-width: 0;
+  }
+
+  .ftr-person {
+    min-width: 0;
+  }
+
+  .ftr-bottom-cp {
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+  }
 }
 body.is-nav-open {
   overflow: hidden;
